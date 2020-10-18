@@ -1,0 +1,17 @@
+h1 {
+    font-style: italic;
+}
+p{
+    font-style: oblique;
+}
+.table{
+    border: royalblue;
+    border-style: ridge;
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: square;
+}
