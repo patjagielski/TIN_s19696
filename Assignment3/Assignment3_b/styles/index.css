@@ -1,29 +1,29 @@
+@import "https://fonts.googleapis.com/css?family=Fira Sans";
+@import "https://fonts.googleapis.com/css?family=Gelasio";
+
 body {
     background: url("../images/landscape.jpg") no-repeat;
     background-size: cover;
 }
 
-/* .grid-container {
+.grid-container {
     display: grid;
     grid-template-areas:
       'header header header header header header'
-      'menu main main main right right'
-      'menu footer footer footer footer footer';
+      'gallery main main main main main'
+      'footer footer footer footer footer footer';
     grid-gap: 10px;
-    background-color: #2196F3;
     padding: 10px;
-  } */
+  }
+  
+.container_top{
+    grid-area: header;
+}
 
 .container_image{
     margin: 2% 0 2% 0;
     display: flex;
     justify-content: center; 
-}
-.container_header{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin-bottom: 10px;
 }
 
 .header_image{
@@ -32,6 +32,19 @@ body {
     border-radius: 10%;
     filter: drop-shadow(30px 10px 4px #050505);
     transform: rotate(10deg);
+}
+
+.container_title{
+    font-family: 'Fira Sans';
+    font-size: 27px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.gallery{
+    grid-area: gallery;
 }
 
 .container_body{
@@ -54,19 +67,22 @@ body {
 }
 
 .container_paragraph{
+    font-family: 'Gelasio';
+    grid-area: main;
     text-align: center;
     columns: 300px 4;
     margin: 0 30px 30px 0;
 }
 
 .blockquote{
+    font-family: 'Gelasio';
     font-size: 30px;
     font-weight: bold;
     font-style: italic;
     color: rgba(153, 7, 63, 0.952);
-    width: 50%;
+    width: 63%;
     float:right;
-    margin:0 0 0 14px;
+    margin:0 0 0 5px;
 }
 .blockimage{
     width: 50%;
@@ -75,6 +91,7 @@ body {
 }
 
 .footer{
+    grid-area: footer;
     font-style: italic;
     margin-left: 40px;
 }
@@ -89,7 +106,6 @@ body {
         text-align: center;
         columns:1;
         margin: 0 30px 30px 0;
-        z-index: 1;
     }
     
     .gallery{
