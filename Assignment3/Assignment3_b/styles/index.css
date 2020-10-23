@@ -11,7 +11,7 @@ body {
     grid-template-areas:
       'header header header header header header'
       'gallery main main main main main'
-      'footer footer footer footer footer footer';
+      'gallery footer footer footer footer footer';
     grid-gap: 10px;
     padding: 10px;
   }
@@ -22,7 +22,7 @@ body {
 
 .container_image{
     margin: 2% 0 2% 0;
-    display: flex;
+    display: grid;
     justify-content: center; 
 }
 
@@ -37,7 +37,7 @@ body {
 .container_title{
     font-family: 'Fira Sans';
     font-size: 27px;
-    display: flex;
+    display: grid;
     text-align: center;
     justify-content: center;
     margin-bottom: 10px;
@@ -45,10 +45,11 @@ body {
 
 .gallery{
     grid-area: gallery;
+    display: table-cell;
 }
 
 .container_body{
-    display: flex;
+    display: table;
     justify-content: center;
     align-items: center;
 }
@@ -98,7 +99,7 @@ body {
 
 @media screen and (max-width: 800px){
     .container_body{
-        display: flex;
+        /* display: flex; */
         flex-flow: column;
     }
     .container_paragraph{
