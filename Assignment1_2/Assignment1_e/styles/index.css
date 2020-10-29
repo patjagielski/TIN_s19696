@@ -1,12 +1,14 @@
 .clear1{
     width: 45%;
-    
     float: left;
 }
 .clear2{
     width: 45%;
-    float: left;
+    float: right;
     
+}
+.train_par{
+    clear: left;
 }
 .pika{
     float: left;
@@ -17,4 +19,8 @@
 }
 .thom{
     float: right;
+}
+
+.base_par{
+    clear: right;
 }
