@@ -5,7 +5,6 @@
     border-color: grey;
     border-width: 3px;
     border-style: groove;
-
 }
 
 .body{
@@ -13,6 +12,7 @@
     margin-left: 10%;
     margin-right: 10%;
 }
+
 p{
     background-color: rgb(245, 237, 202);
     border-width: 2px;

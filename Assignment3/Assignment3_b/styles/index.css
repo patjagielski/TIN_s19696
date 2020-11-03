@@ -99,7 +99,7 @@ body {
 
 @media screen and (max-width: 800px){
     .container_body{
-        /* display: flex; */
+        display: flex;
         flex-flow: column;
     }
     .container_paragraph{
