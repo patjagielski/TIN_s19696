@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+      <h1>
+        Lets convert some Distances
+      </h1>
+      <form id="distForm" action="/distConverter" method="POST" >
+        <input id="distInput" name="distInput" type="number">
+        <select name="from"  id="from">
+          <option id="fromM">Miles</option>
+          <option id="fromK">Kilometers</option>
+        </select>
+        Convert to:
+        <select name="to" id="to">
+          <option id="toM">Miles</option>
+          <option id="toK">Kilometers</option>
+        </select>
+        <input type="submit" value="Submit">
+      </form>
+      
+      
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</html>

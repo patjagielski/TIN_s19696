@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+      <h1>
+        Lets convert some Temperatures
+      </h1>
+      <form id="tempForm" action="/tempConverter" method="POST" >
+        <input id="tempInput" name="tempInput" type="number">
+        <select name="fromOp"  id="fromOp">
+          <option id="fromF">Fahrenheit</option>
+          <option id="fromC">Celsius</option>
+          <option id="fromK">Kelvin</option>
+        </select>
+        Convert to:
+        <select name="toOp" id="toOp">
+          <option id="toF">Fahrenheit</option>
+          <option id="toC">Celsius</option>
+          <option id="toK">Kelvin</option>
+        </select>
+        <input type="submit" value="Submit">
+      </form>
+      
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/assets/ajax.js"></script>
+</html>
