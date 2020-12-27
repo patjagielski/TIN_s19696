@@ -32,6 +32,7 @@ $(document).ready(function(){
             contentType: "application/x-www-form-urlencoded",
             success : function(res){
                 $("form").append("<br/>"+res);
+                
             }, error: function(err){
                 console.log(err);
             }
